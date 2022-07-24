@@ -1,0 +1,22 @@
+.btn {
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: var(--br-400);
+    font-weight: 500;
+
+    &--add {
+        background-color: var(--clr-btn-add);
+        color: var(--clr-white);
+    }
+
+    &--close {
+        background-color: var(--clr-btn-close);
+        color: var(--clr-white);
+    }
+
+    &--primary {
+        width: 100%;
+        background-color: var(--clr-btn-primary);
+        color: var(--clr-white);
+    }
+}

@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        font-size: var(--fs-h1);
+        font-family: var(--ff-heading);
+        color: var(--clr-txt-main);
+    }
+}

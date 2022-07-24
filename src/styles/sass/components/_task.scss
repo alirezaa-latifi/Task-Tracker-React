@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.task {
+    &__list {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: var(--br-400);
+        background-color: var(--clr-bg-task);
+        cursor: pointer;
+
+        &--reminder {
+            border-left: 3px solid var(--clr-task-hasReminder);
+        }
+    }
+
+    &__title {
+        font-size: var(--fs-taskHeading);
+        font-weight: var(--fw-500);
+    }
+
+    &__remove {
+        color: var(--clr-icon-remove);
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        @include on-event {
+            color: rgb(63, 0, 8);
+        }
+    }
+}
